@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
+    <title>Booki</title>
+    <!-- Ajouter l'icone booki -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <!--Ajout de la police-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-  
-  
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Relier son fichier CSS -->
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- inserer une icone-->
     <script
       src="https://kit.fontawesome.com/58205e9935.js"
       crossorigin="anonymous"
@@ -20,65 +27,126 @@
   </head>
   <body>
     <header>
-      <img src="Images+Booki/Images Booki/logo/Booki.png" />
+      <img
+        class="logo"
+        src="Images+Booki/Images Booki/logo/Booki.png"
+        alt="Logo booki"
+      />
       <nav>
         <ul>
-          <li>Hébergement</li>
-          <li>Activités</li>
+          <a href="#Hebergement">Hébergement</a>
+          <a href="#Activités">Activités</a>
         </ul>
       </nav>
     </header>
     <main>
-      <section>
-        <!-- Premiere section -->
-        <h2>Trouvez votre hébergement pour des vacances de rêves</h2>
-        <article>
-          <p>En plein centre-ville ou en pleine nature</p>
+      <!-- Premiere section -->
+
+      <section id="search">
+        <div class="titles">
+          <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+          <h2>En plein centre-ville ou en pleine nature</h2>
+        </div>
+
+        <div class="filters">
+          <p>
+            <i class="fa-solid fa-money-bill-wave"></i>Economique
+            <i class="fa-solid fa-person"></i>Familial
+            <i class="fa-solid fa-heart"></i>Romantique
+            <i class="fa-solid fa-dog"></i>Animaux autorisés
+          </p>
           <p>Plus de 500 logements sont disponibles dans cette ville</p>
-        </article>
+        </div>
       </section>
+
       <!-- Fin de la premiere section -->
-      <section>
-        <!-- Deuxieme section-->
-        <article>
-          <h2>Hébergements à Marseille</h2>
+
+      <!-- Deuxieme section-->
+
+      <section class="section2">
+        <div class="Hebergement_a_marseille">
+          <h3 id="Hebergerment">Hébergements à Marseille</h3>
+
+          <div class="allimage">
+            <div class="image_canebiere">
+              <img
+                src="/Images+Booki/Images Booki/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+              />
+              <h4>Auberge La Canebière</h4>
+            </div>
+            <div class="image_port">
+              <img
+                src="/Images+Booki/Images Booki/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+              />
+              <h4>Hôtel du port</h4>
+            </div>
+            <div class="image_mouettes">
+              <img
+                src="/Images+Booki/Images Booki/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+              />
+              <h4>Hôtel les mouettes</h4>
+            </div>
+            <div class="image_mer">
+              <img
+                src="/Images+Booki/Images Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+              />
+              <h4>Hôtel de la mer</h4>
+            </div>
+            <div class="image_panier">
+              <img
+                src="/Images+Booki/Images Booki/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+              />
+
+              <h4>Auberge le panier</h4>
+            </div>
+            <div class="image_amina">
+              <img
+                src="/Images+Booki/Images Booki/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+              />
+              <h4>Hôtel chez Amina</h4>
+            </div>
+          </div>
           <p>Afficher plus</p>
-        </article>
+        </div>
+
         <aside>
-          <h2>Les plus populaires</h2>
-          <img src="/Images+Booki/Images Booki/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"/>
+          <h3>Les plus populaires</h3>
+          <img
+            src="/Images+Booki/Images Booki/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+          />
         </aside>
       </section>
+
       <!-- Fin de la deuxieme section -->
+
+      <!-- Troisième section -->
       <section>
-        <!-- Troisième section -->
-        <h2>Activités à Marseille</h2>
-        <article>
-          <img src="/Images+Booki/Images Booki/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"/>
+        <div class="Activites">
+          <h3 id="Activités">Activités à Marseille</h3>
+
+          <img
+            src="/Images+Booki/Images Booki/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+          />
           <p>Notre dame-de-la-Garde</p>
-        </article>
-        <article>
+
           <img
             src="/Images+Booki/Images Booki/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
           />
           <p>Parc national des Calanques</p>
-        </article>
-        <article>
+
           <img
             src="/Images+Booki/Images Booki/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
           />
           <p>Fort de Pomègues</p>
-        </article>
-        <article>
+
           <img
             src="/Images+Booki/Images Booki/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
           />
           <p>Vieux port</p>
-        </article>
+        </div>
       </section>
       <!-- Fin de la troisième section-->
     </main>
-
     <footer>
       <article>
         <h3>A propos</h3>
