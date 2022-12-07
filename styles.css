@@ -59,9 +59,8 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    width: 5%;
-    height: auto;
-    
+    height: 20px;
+    width: 60px;
 }
 /* Fin de Header */
 
@@ -77,15 +76,14 @@ header {
 .titles {
     font-size: 22px;
     font-weight: 700;
-
-    width: 50%;
+    width: 100%;
     height: auto;
 }
 
 .subtitle {
     font-weight: 400;
     font-size: 16px;
-    width: 25%;
+    width: 100%;
     height: auto;
     margin: 0;
 }
@@ -94,18 +92,21 @@ header {
 
 .bar_recherche {
     display: flex;
-    width: 30%;
-    height: 60px;  
-    margin-top: 20px;
-    justify-content: center;
+    width: 418px;
+    height:49px;  
+    margin: 20px 0px 20px 0px;
 }
 
+.form-example {
+    width:282px;
+    height: 49px;
+}
 .icon{
 background-color: #F2F2F2;
 border-radius: 15px 0px 0px 15px;
 font-size: 25px;
-width: 15%;
-height: 50px;
+width: 50px;
+height: 49px;
 display: flex;
 justify-content: center;
 align-items: center ;
@@ -120,8 +121,9 @@ border-radius: 0px 15px 15px 0px;
 font-weight: 700;
 font-size: 18px;
 color: white;
-width: 40%;
-height: 50px;
+width: 132px;
+height: 49px;
+cursor: pointer;
 }
 
 .textfiel {
@@ -141,11 +143,7 @@ height: 50px;
 /* les filtres */
 
 .filters {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
-    align-items: center;
+    width:100%;
 }
 
 .filters h4 {
@@ -158,22 +156,16 @@ height: 50px;
     list-style-type: none;
     font-weight: 700;
     font-size: 17px;
-    width: 100%;
-    align-items: center;
-    
-
+    padding: 0;
 }
 
 .filters ul li {
     display: flex;
     border-radius: 25px;
     border: 2px solid #D9D9D9 ;
-    width: auto;
-    height: 50px;
-    margin: 15px;
+    height: 40px;
+    margin: 10px;
     align-items: center;
-    justify-content: center;
-    
 }
 
 .filters_icone {
@@ -231,7 +223,7 @@ h3 {
 
 h4 {
     font-size: 18px;
-    font-weight:700*
+    font-weight:700;
     color: black;
 }
 
@@ -288,6 +280,7 @@ h5 {
     flex-wrap: wrap;
     width: 90%;
     height: 500px;
+    display: flex;
     justify-content: space-between;
 
 }
@@ -307,7 +300,7 @@ h5 {
 }
 .bloc_heb a {
     text-decoration: none;
-    width: 29%;
+    width: 33%;
     margin: 0;
 }
 
@@ -316,13 +309,13 @@ h5 {
     border: 5px solid white;
     border-radius: 20px;
     height: 199px;
-    width:100%;
-    margin: 0px 0px 0px 10px
-    
+    width:90%;
+    margin: 0px 0px 0px 10px;
+
 }
 
 .bloc_heb_all_cards .star {
-    width: 100%;
+    width: 90%;
     margin: 0px 0px 0px 5px;
     padding-top: 10px;
 
@@ -337,14 +330,14 @@ h5 {
 }
 
 .bloc_heb .card-text {
-    width: 100%;
+    width: 90%;
     height:auto;
     margin: 0px 0px 0px 5px;
 }
 
 
 /* Les plus populaires */
-/* essai */
+
 aside {
     width: 35%;
     background: #F2F2F2;
@@ -423,6 +416,7 @@ aside {
 
 #bloc_activites {
     width: 100%;
+    
 }
 
 #bloc_activites h3 {
@@ -434,35 +428,35 @@ aside {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-    height: auto;
     margin: 0px;
+    width: 100%;
 }
 
 .bloc_activites_carts a {
     text-decoration: none;
+    width: 23%;
 }
 
 .bloc_activites_carts_details {
     margin: 20px 0px 0px 0px;
     border-radius: 20px;
-    width: 302px;
+    width: 100%;
     box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5)
-    
+
 }
 
 .bloc_activites_carts_details .card-image {
 
     object-fit: cover;
     width: 100%;
-    height: 400px;
+    height: 445px;
     border-radius: 20px 20px 0px 0px;
 
 }
 
 
 .bloc_activites_carts_details .card-text {
-    width: 302px;
+    width: 100%px;
     height: 60px;
     border-radius: 0px 0px 20px 20px;
     display: flex;
@@ -496,5 +490,90 @@ footer p {
     font-size: 16px;
 }
 
+@media all and (max-width: 992px) {
 
-/* Media */
+   
+ 
+    .bloc_activites_carts .card-image {
+        height: 220px;}
+
+    #bloc_heb_pop {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    #bloc_heb_pop .bloc_heb  {
+        order: 1;
+        width: 100%;
+
+    }
+
+    aside { 
+        order: 2;
+        width: 100%;
+        margin-top: 50px;
+        height: auto ;
+    }
+
+    .bloc_populaires {
+        display: flex;
+        width: 90%;
+        height: 180px; 
+        justify-content: space-between;
+    }
+
+    .pop_graph {
+        width: 90%;
+    }
+    
+    
+
+    .bloc_populaires a {
+        width: 30%;
+        height: auto;
+    }
+        
+    .bloc_populaires .card {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .rqt_result {
+        width: 100%;
+    }
+
+    .section1 .subtitle {
+        width: 100%;
+    }
+
+    .section1 .titles {
+        width: 100%;
+    }
+
+    .filters {
+        white-space: nowrap;
+        width: 90%;
+    }  
+
+    .filters ul {
+        border: 1px solid green;
+        width: auto
+    };
+}
+
+@media all and (max-width: 768px) {
+
+    .filters { 
+        border: 2px solid red;
+        width: 100%;   
+}   
+    .filters ul {
+        border: 10px solid green;
+        width: 100%;
+    }
+
+
+}
+
