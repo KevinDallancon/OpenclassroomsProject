@@ -1,8 +1,9 @@
 body {
     font-family: 'Raleway', 'sans-serif';
-    margin:auto;
+    margin: auto;
     max-width: 1400px;
 }
+
 
 /* Header */
 
@@ -10,6 +11,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .nav_bar {
@@ -25,7 +27,7 @@ header {
     color: black;
     font-weight: 500;
     font-size: 16px;
-    padding: 25px;
+    padding: 25px 0px 25px 0px;
     ;
 }
 
@@ -59,8 +61,8 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    height: 20px;
-    width: 60px;
+    height: auto;
+    width: 5%;
 }
 /* Fin de Header */
 
@@ -124,6 +126,7 @@ color: white;
 width: 132px;
 height: 49px;
 cursor: pointer;
+
 }
 
 .textfiel {
@@ -143,12 +146,18 @@ cursor: pointer;
 /* les filtres */
 
 .filters {
-    width:100%;
-}
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}  
+
 
 .filters h4 {
+    display: flex;
     font-weight: 700;
     font-size: 18px;
+    align-items: center;
+    margin: 0px 5px 0px 0px;
 }
 
 .filters ul {
@@ -157,27 +166,35 @@ cursor: pointer;
     font-weight: 700;
     font-size: 17px;
     padding: 0;
+    width: 100%;
+    
 }
+
 
 .filters ul li {
     display: flex;
     border-radius: 25px;
     border: 2px solid #D9D9D9 ;
-    height: 40px;
-    margin: 10px;
+    height: 50px;
     align-items: center;
+    align-content: center;
+    width: auto;
+    margin: 0px 0px 0px 15px;
+    
 }
 
 .filters_icone {
     color: #0065FC;
-    padding: 0px 0px 0px 20px;
+    margin: 0px 0px 0px 10px;
 
 }
 
 .filters a {
     text-decoration: none;
-    padding: 0px 15px 0px 15px;
     color: black;
+    white-space:nowrap;
+    margin: 0px 10px 0px 10px;
+
 }
 
 .filters ul :hover {
@@ -297,10 +314,12 @@ h5 {
     width: 90%;
     height: auto;
     margin-top: 40px;
+   
 }
 .bloc_heb a {
     text-decoration: none;
     width: 33%;
+    height: 210PX;
     margin: 0;
 }
 
@@ -333,6 +352,7 @@ h5 {
     width: 90%;
     height:auto;
     margin: 0px 0px 0px 5px;
+    white-space: nowrap;
 }
 
 
@@ -492,10 +512,13 @@ footer p {
 
 @media all and (max-width: 992px) {
 
-   
- 
+    .logo { 
+        width: 10%;
+    }
+
     .bloc_activites_carts .card-image {
         height: 220px;}
+
 
     #bloc_heb_pop {
         display: flex;
@@ -506,7 +529,6 @@ footer p {
     #bloc_heb_pop .bloc_heb  {
         order: 1;
         width: 100%;
-
     }
 
     aside { 
@@ -519,26 +541,25 @@ footer p {
     .bloc_populaires {
         display: flex;
         width: 90%;
-        height: 180px; 
-        justify-content: space-between;
+        height: auto;
+        margin-bottom: 50px;
     }
 
     .pop_graph {
         width: 90%;
     }
-    
-    
 
     .bloc_populaires a {
-        width: 30%;
+        width: 100%;
         height: auto;
     }
         
     .bloc_populaires .card {
-        width: 100%;
-        height: auto;
         margin: 0;
+        height: auto;
+        width: 90%;
     }
+
 
     .rqt_result {
         width: 100%;
@@ -552,28 +573,45 @@ footer p {
         width: 100%;
     }
 
-    .filters {
-        white-space: nowrap;
-        width: 90%;
-    }  
 
-    .filters ul {
-        border: 1px solid green;
-        width: auto
-    };
 }
 
-@media all and (max-width: 768px) {
-
-    .filters { 
-        border: 2px solid red;
-        width: 100%;   
-}   
-    .filters ul {
-        border: 10px solid green;
+@media all and (max-width: 767px) {
+    
+    header {
+        display: flex;
+        flex-direction: column;
         width: 100%;
     }
 
 
+    .filters ul {
+        display: block;
+        width: 30%
+    };
+
+    .filters h4 {
+        width: 100%;
+    }
+
+    .filters {
+        display: block;
+        width: 100%;
+    }
+
+    .bloc_heb_all_cards {
+        display:block
+    }
+
+    .bloc_populaires {
+        display: block;
+    }
+    .bloc_activites_carts {
+        display: block;
+    }
+
+    footer {
+        display: block;
+    }
 }
 
