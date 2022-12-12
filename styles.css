@@ -2,7 +2,9 @@ body {
     font-family: 'Raleway', 'sans-serif';
     margin: auto;
     max-width: 1400px;
+    margin: 3%;
 }
+
 
 
 /* Header */
@@ -62,7 +64,7 @@ header {
     display: flex;
     align-items: center;
     height: auto;
-    width: 5%;
+    width: 60px;
 }
 /* Fin de Header */
 
@@ -94,21 +96,20 @@ header {
 
 .bar_recherche {
     display: flex;
-    width: 418px;
+    width: 60%;
     height:49px;  
     margin: 20px 0px 20px 0px;
 }
 
 .form-example {
-    width:282px;
-    height: 49px;
 }
+
 .icon{
 background-color: #F2F2F2;
 border-radius: 15px 0px 0px 15px;
 font-size: 25px;
 width: 50px;
-height: 49px;
+height: 50px;
 display: flex;
 justify-content: center;
 align-items: center ;
@@ -123,8 +124,7 @@ border-radius: 0px 15px 15px 0px;
 font-weight: 700;
 font-size: 18px;
 color: white;
-width: 132px;
-height: 49px;
+width: 130px;
 cursor: pointer;
 
 }
@@ -140,6 +140,9 @@ cursor: pointer;
     color: #000000
 }
 
+.loupe {
+    display: none;
+}
 
 /* Fin du bloc rechercher */ 
 
@@ -510,12 +513,10 @@ footer p {
     font-size: 16px;
 }
 
-@media all and (max-width: 992px) {
 
-    .logo { 
-        width: 10%;
-    }
+@media all and (max-width: 1024px) {
 
+ 
     .bloc_activites_carts .card-image {
         height: 220px;}
 
@@ -533,7 +534,7 @@ footer p {
 
     aside { 
         order: 2;
-        width: 100%;
+        width: auto;
         margin-top: 50px;
         height: auto ;
     }
@@ -560,7 +561,9 @@ footer p {
         width: 90%;
     }
 
-
+    .bar_recherche {
+        width:100%;
+    }
     .rqt_result {
         width: 100%;
     }
@@ -576,42 +579,170 @@ footer p {
 
 }
 
-@media all and (max-width: 767px) {
-    
+@media all and (max-width: 767.98px) {
+
     header {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+       flex-direction: column;
+       height: 120px;
     }
 
 
+    .logo {
+        margin-top: 15px;
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: center;
+        height: auto;
+    }
+
+    .nav_bar {
+        width: 100%;
+        height: 50px;
+    }
+
+    .nav_bar a:hover {
+        color: #0065FC;
+        border-top: none;
+        border-bottom: 2px solid #0065fc;
+        cursor: pointer;    
+    }
+
+    .nav_bar a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hebergement_nav {   
+        margin: 0px;
+    }
+
+    .section1 {
+        width: 100%;
+    }
+
     .filters ul {
-        display: block;
-        width: 30%
-    };
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .filters ul li {      
+      width: 160px;
+      margin-top: 15px;
+    }
 
     .filters h4 {
         width: 100%;
     }
 
+    .filters a {
+        font-size: 11px;
+    }
+    .filters_icone {
+        margin-left: 14px;
+    }
+
     .filters {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0px;
+        background-color:white;
+    }
+
+    #bloc_heb_pop {
+        display: flex;
+        width: auto;
+        height: auto;
+    }
+
+
+    #bloc_heb_pop .bloc_heb {
+        order: 2;
+        width: auto;
+    }
+
+    aside {
+        order: 1;
+        height: auto;
+        width: auto;
+        border-radius: 0px;
+    }
+
+    .bloc_heb {
+        background-color: white;
         width: 100%;
     }
 
     .bloc_heb_all_cards {
-        display:block
+        display:block;
+        height: auto;
+        width: 100%;
+        
     }
+
+    .bloc_heb .card {
+        box-shadow: 0px 3px 10px 0px rgb(0 0 0 / 50%);
+        margin-bottom: 10px;
+    }
+
 
     .bloc_populaires {
         display: block;
+        width: auto;
+        background-color: #F2F2F2;
     }
+
+    .bloc_populaires a {
+        width: 100%;
+    }
+
+    .bloc_populaires .card {
+        width: auto;
+        margin-bottom: 10px;
+    }
+
     .bloc_activites_carts {
         display: block;
+        width: auto;
     }
+
+    .bloc_activites_carts .card-image {
+        height: 150px;}
 
     footer {
         display: block;
+        padding-top: 30px;
+        padding-left: 20px;
+    }
+
+    .searchtext{
+        display: none;
+    }
+
+    .loupe {
+        display: block;
+    }
+
+    
+    .rqt_result {
+        padding: 0px;
+        margin-top: 20px;
+    }
+
+    .textfiel {
+        width: 100%;
+    }
+
+    button {
+        width: 20%;
+    }
+
+    .icon {
+        width: 20%;
+    }
+     
+    #plus {
+        display: none;
     }
 }
 
