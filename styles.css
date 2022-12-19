@@ -140,6 +140,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 
 .filters h4 {
@@ -173,6 +174,7 @@ button {
 .filters_icone {
   color: #0065fc;
   margin: 0px 0px 0px 10px;
+  font-size: 18px;
 }
 
 .filters a {
@@ -180,6 +182,7 @@ button {
   color: black;
   white-space: nowrap;
   margin: 0px 10px 0px 10px;
+  font-size: 13px;
 }
 
 .filters ul :hover {
@@ -571,7 +574,7 @@ footer p {
   }
 
   .filters ul li {
-    width: 160px;
+    width: 170px;
     margin-top: 15px;
   }
 
@@ -580,10 +583,11 @@ footer p {
   }
 
   .filters a {
-    font-size: 11px;
+    font-size: 13px;
   }
   .filters_icone {
     margin-left: 14px;
+    font-size: 15px;
   }
 
   .filters {
@@ -592,6 +596,8 @@ footer p {
     width: 100%;
     margin: 0px;
     background-color: white;
+    width: auto;
+    margin: auto;
   }
 
   #bloc_heb_pop {
